@@ -2,18 +2,12 @@ resource "aws_dynamodb_table" "application-dynamodb-table" {
   name           = "application_table"
   billing_mode   = "PAY_PER_REQUEST"
   hash_key       = "appName"
-  range_key      = "comment"
+
 
   attribute {
     name = "appName"
     type = "S"
   }
-
-  attribute {
-    name = "comment"
-    type = "S"
-  }
-
 }
 
 resource "aws_dynamodb_table_item" "test" {
