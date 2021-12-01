@@ -1,5 +1,4 @@
-resource "aws_iam_policy" "db_access_policy" {
-  name        = "db_access_policy"
+resource "aws_iam_policy" "db_access_policy" {  
   path        = "/"
   description = "Access data policy"
 
